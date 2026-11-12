@@ -1,0 +1,62 @@
+:root {
+  --primary: #ff6b35;                       /* 主色，外卖场景用暖橙 */
+  --primary-dark: #e8551f;                  /* 主色按下/选中态 */
+  --bg: #f6f7f9;                            /* 页面底色 */
+  --card: #ffffff;                          /* 卡片底色 */
+  --text: #1f2329;                          /* 主文字 */
+  --text-2: #646a73;                        /* 次要文字 */
+  --text-3: #8f959e;                        /* 弱化文字 */
+  --border: #e8eaee;                        /* 分割线 */
+  --radius: 12px;                             /* 统一圆角 */
+  --shadow: 0 4px 16px rgba(31, 35, 41, 0.06); /* 统一阴影 */
+}
+
+* {
+  box-sizing: border-box;                   /* 宽度包含内边距，布局不撑破 */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;                        /* 撑满视口，底部栏才有地方贴 */
+}
+
+.page-container {
+  max-width: 1120px;                        /* 内容最大宽度，宽屏不散 */
+  margin: 0 auto;
+  padding: 24px 20px 96px;                  /* 底部留白，避免被悬浮栏挡住 */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Element Plus 主色覆盖，让按钮和网站主色一致 */
+:root {
+  --el-color-primary: #ff6b35;
+}
